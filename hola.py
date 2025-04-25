@@ -51,22 +51,50 @@
 # else:
 #  print("el numero es impar")
 
-color=input("ingrese un color")
+#
 #si es azul es de la u
 #si es blanco es cc
 #si es rojo es union
 #si es verde, audax
 #si es otro, no es color valido
 
-if color=="azul":
-    print("es de la u")
-elif color=="blanco":
-    print("es de colo-colo")
-elif color=="rojo":
-    print("es de union española")
-elif color=="verde":
-    print("es de audax") 
-else:
-    print("no es un color valido")
+# if color=="azul":
+#     print("es de la u")
+# elif color=="blanco":
+#     print("es de colo-colo")
+# elif color=="rojo":
+#     print("es de union española")
+# elif color=="verde":
+#     print("es de audax") 
+# else:
+#     print("no es un color valido")
     
+#ingresar 3 numeros y ver el mayor de ellos
+num1=int(input("ingrese un numero "))
+num2=int(input("ingrese otro numero "))
+num3=int(input("ingrese otro numero "))
+# if num1>num2 and num1>num3:
+#  print("el primer numero ingresado es el mayor ", num1)
+# elif num2>num3:
+#  print("el segundo numero ingresado es el mayor ", num2)
+# else:
+#  print("el tercer numero ingresado es el mayor ") 
 
+# m= max(n1,n2,n3)
+# print(f"el mayor es {m}")
+
+
+# #ingresar 3 numeros y promediarlos
+
+#promedio=0
+# suma=0
+
+n1=int(input("ingrese su primera nota"))
+n2=int(input("ingrese su segunda nota"))
+n3=int(input("ingrese su tercera nota"))
+# suma=n1+n2+n3
+# promedio=suma/3
+# print("su promedio es: ", promedio)
+
+prom=(n1+n2+n3)/3
+print ("el promedio es ", round(prom))
