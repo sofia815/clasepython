@@ -26,9 +26,10 @@
         ## preguntar ingresar la cantidad de notas y promediarlas
 
 
-# suma=0
+
     
 # cantnotas=int(input("ingrese la cantidad de notas "))
+# suma=0
 # for i in range(cantnotas):
 #     print(f"ingrese la nota numero {i+1}")
 #     nota=float(input())
@@ -91,3 +92,5 @@ else:
     print(f"la cantidad de votos de {c2} es {cv2}")
     if cv1>cv2:
         print("el ganador es {c1}")
+
+

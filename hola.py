@@ -1,4 +1,12 @@
-#
+#tipos de datos#
+'''
+caracter : string #variables tipo texto
+entero : integer (int) #variables tipo numero entero
+real : float #numeros con decimas
+logico : boolean # permine solo 2 valores posibles true or false
+'''
+
+
 # print("ingrese su nombre")
 # nombre=input()
 # print("ingrese su edad")
@@ -70,9 +78,9 @@
 #     print("no es un color valido")
     
 #ingresar 3 numeros y ver el mayor de ellos
-num1=int(input("ingrese un numero "))
-num2=int(input("ingrese otro numero "))
-num3=int(input("ingrese otro numero "))
+# num1=int(input("ingrese un numero "))
+# num2=int(input("ingrese otro numero "))
+# num3=int(input("ingrese otro numero "))
 # if num1>num2 and num1>num3:
 #  print("el primer numero ingresado es el mayor ", num1)
 # elif num2>num3:
@@ -89,12 +97,12 @@ num3=int(input("ingrese otro numero "))
 #promedio=0
 # suma=0
 
-n1=int(input("ingrese su primera nota"))
-n2=int(input("ingrese su segunda nota"))
-n3=int(input("ingrese su tercera nota"))
+# n1=int(input("ingrese su primera nota"))
+# n2=int(input("ingrese su segunda nota"))
+# n3=int(input("ingrese su tercera nota"))
 # suma=n1+n2+n3
 # promedio=suma/3
 # print("su promedio es: ", promedio)
 
-prom=(n1+n2+n3)/3
-print ("el promedio es ", round(prom))
+# prom=(n1+n2+n3)/3
+# print ("el promedio es ", round(prom))
