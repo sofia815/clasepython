@@ -41,8 +41,8 @@
         
 
 # ### Pedir dia y mes de nacimiento y mostrar el signo zodiacal###
-import random
-import time
+# import random
+# import time
 # dianac=int(input("ingrese su dia de nacimiento "))
 # mesnac=int(input("ingrese su mes de nacimiento "))
 
@@ -92,44 +92,44 @@ import time
 # Basico : x1, medio: x1.3 , superior: x1.5
 # Nacionalidad 
 # Chilena : +300.000, Extranjero: +0
+####################################################################
+# suma=0
+# canting=int(input('''
+#                   indique su cantidad de ingresos
+#                   1.- 500.000 a 1.000.000
+#                   2.- 1.000.001 a 1.500.000
+#                   3.- 1.500.001 o más  
+#                   '''))
+# if canting==1:
+#     suma+=300000
+# elif canting==2:
+#     suma+=650000
+# elif canting==3:
+#     suma+=1000000
+# nac=int(input('''
+#         indique su nacionalidad
+#         1.- chilena
+#         2.- otro
+#         '''))
+# if nac==1:
+#     suma+=300000
+# elif nac==2:
+#     suma+=0
+# niveled=int(input('''
+#                   ingrese su nivel educacional
+#                   1.- E. Básica
+#                   2.- E. Media
+#                   3.- E. Superior
+#                   '''))
+# if niveled==1:
+#     suma*=1
+# elif niveled==2:
+#     suma*=1.3
+# elif niveled==3:
+#     suma*=1.5
 
-suma=0
-canting=int(input('''
-                  indique su cantidad de ingresos
-                  1.- 500.000 a 1.000.000
-                  2.- 1.000.001 a 1.500.000
-                  3.- 1.500.001 o más  
-                  '''))
-if canting==1:
-    suma+=300000
-elif canting==2:
-    suma+=650000
-elif canting==3:
-    suma+=1000000
-nac=int(input('''
-        indique su nacionalidad
-        1.- chilena
-        2.- otro
-        '''))
-if nac==1:
-    suma+=300000
-elif nac==2:
-    suma+=0
-niveled=int(input('''
-                  ingrese su nivel educacional
-                  1.- E. Básica
-                  2.- E. Media
-                  3.- E. Superior
-                  '''))
-if niveled==1:
-    suma*=1
-elif niveled==2:
-    suma*=1.3
-elif niveled==3:
-    suma*=1.5
-
-print("usted tiene ", round(suma) , " puntajes de credito")
-
+# print("usted tiene ", round(suma) , " puntajes de credito")
+##########################################################################
 #suma=0 no es necesario declararla aparte ya que se declara en canting
 
 
@@ -169,3 +169,14 @@ print("usted tiene ", round(suma) , " puntajes de credito")
 #              print("le quedan $",totalasacar, "para retirar")
 #          else:
 #            print("no hay saldo dispoible")
+# import time
+# #lavar loza
+# platos_sucios=10
+# while platos_sucios==10:
+#     platos_sucios-=1
+#     print("usted a lavdo un plato, quedan ", platos_sucios)
+#     time.sleep(1)
+    
+
+
+

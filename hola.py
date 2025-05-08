@@ -106,3 +106,41 @@ logico : boolean # permine solo 2 valores posibles true or false
 
 # prom=(n1+n2+n3)/3
 # print ("el promedio es ", round(prom))
+
+#ejercicio 8/5
+
+import random
+
+# n1=0
+# n2=0
+
+# #while n1>=n2:
+      
+# n1=int(input("ingrese un numero "))
+# n2=int(input("ingrese un numero mayor al anterior"))
+# if n2>n1:
+#         numero=random.randint(n1,n2)
+#         print(" ▄ "*numero)
+
+promfin=0
+cantramos=int(input("cuántos ramos tiene? "))
+
+prom=int(input("ingresa el promedio de cada materia "))
+
+
+
+print('''
+1.- 4.5 y 5
+      2.- 5.1 y 6.0
+      3.- 6.1
+      '''))
+
+if promfin=1:
+
+
+
+
+#print("su puntaje de beneficios es: ")
+
+
+
