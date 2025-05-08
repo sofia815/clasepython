@@ -48,10 +48,10 @@ import random
 
 import time
 #dado=0
-meta=30
-turno=1
-j1=0
-j2=0
+# meta=30
+# turno=1
+# j1=0
+#j2=0
 
 # while j1<meta and j2<meta:
   
