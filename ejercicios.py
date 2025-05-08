@@ -93,7 +93,42 @@ import time
 # Nacionalidad 
 # Chilena : +300.000, Extranjero: +0
 
+suma=0
+canting=int(input('''
+                  indique su cantidad de ingresos
+                  1.- 500.000 a 1.000.000
+                  2.- 1.000.001 a 1.500.000
+                  3.- 1.500.001 o más  
+                  '''))
+if canting==1:
+    suma+=300000
+elif canting==2:
+    suma+=650000
+elif canting==3:
+    suma+=1000000
+nac=int(input('''
+        indique su nacionalidad
+        1.- chilena
+        2.- otro
+        '''))
+if nac==1:
+    suma+=300000
+elif nac==2:
+    suma+=0
+niveled=int(input('''
+                  ingrese su nivel educacional
+                  1.- E. Básica
+                  2.- E. Media
+                  3.- E. Superior
+                  '''))
+if niveled==1:
+    suma*=1
+elif niveled==2:
+    suma*=1.3
+elif niveled==3:
+    suma*=1.5
 
+print("usted tiene ", round(suma) , " puntajes de credito")
 
 #suma=0 no es necesario declararla aparte ya que se declara en canting
 
@@ -134,79 +169,3 @@ import time
 #              print("le quedan $",totalasacar, "para retirar")
 #          else:
 #            print("no hay saldo dispoible")
-
-
-
-usu1=6000
-clave1="messi"
-usu2=40000
-clave2="cristiano"
-usu3=12000
-clave3="alexis"
-ca10=30
-ca20=30
-ca5=30
-salir=0
-salir2=0
-cajero=ca10+ca20+ca5
-
-
-while salir==0:
- op1=input("Bienvenido ingrese su palabra secreta: ").strip().lower()
- if op1==clave1:
-  while salir2==0:
-     print("Bienvenido usuario 1")
-     print("Ingrese opcion a realizar: ")
-     op2=int(input("1) Sacar billetes 2) Consultar saldo 3) Salir"))
-     if op2==1:
-         print(f"Su saldo es: {usu1}")
-         giro=int(input("Ingrese un numero a retirar  "))
-         if giro==1 and ca5>=1 and usu1>=5000:
-             print("giro exitoso")
-             usu1-=5000
-             ca5-=1
-        
-            print("le quedan" usu1)
-        elif giro==2:
-         
-         usu1>=giro and giro<=cajero:
-             print("")
-     elif op2==2:
-         print(f"Su saldo es: {usu1}")
-     elif op2==3:
-         print("Adios")
-         salir2=1
-     
- elif op1==clave2:
-     print("Bienvenido usuario 2")
-     print("Ingrese opcion a realizar: ")
-     op2=int(input("1) Sacar billetes 2) Consultar saldo 3) Salir"))
-     if op2==1:
-         print(f"Su saldo es: {usu2}")
-         giro=int(input("Ingrese un numero a retirar"))
-         if usu2>=giro and giro<=cajero:
-            
-             print("")
-     elif op2==2:
-         print(f"Su saldo es: {usu2}")
-     elif op2==3:
-         print("Adios")
-         salir2=1
- elif op1==clave3:
-     print("Bienvenido usuario 3")
-     print("Ingrese opcion a realizar: ")
-     op2=int(input("1) Sacar billetes 2) Consultar saldo 3) Salir"))
-     if op2==1:
-         print(f"Su saldo es: {usu3}")
-         giro=int(input("Ingrese un numero a retirar"))
-         if usu3>=giro and giro<=cajero:
-             print("")
-     elif op2==2:
-         print(f"Su saldo es: {usu3}")
-     elif op2==3:
-         print("Adios")
-         salir2=1
- elif op1=="salir":
-     salir=salir+1
- else:
-     print("Ingrese una clave valida")
