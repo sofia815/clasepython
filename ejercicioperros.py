@@ -235,36 +235,121 @@ import time
 # Una vez que haya visualizado el detalle, debe preguntar al usuario si desea realizar otro pedido o salir del programa.
 # Para finalizar suba el programa a un repositorio Github como respaldo y el link del repositorio a AVA en la actividad
 # formativa 2 para aplicar la pauta de evaluación.
+# total=0
+# codigo="soyotaku"
+# cant
+# while True:
+#         print ('''
+#             1.- Pikachu Roll $4500
+#             2.- Otaku Roll $5000
+#             3.- Pulpo venenoso Roll $5200
+#             4.- Anguila Electrica Roll $4800
+#             5.- Salir
+#             ''')
+#         op=int(input("que desea pedir? "))
+#         if op==1:
+#                 print("eligio pikachu roll")
+#                 total+=4500
+#         elif op==2:
+#                 print("eligio otaku roll")
+#                 total+=5000
+#         elif op==3:
+#                 print("eligio pulpo ")
+#                 total+=5200
+#         elif op==4:
+#                 print("eligio anguila electrica roll ")
+#                 total+=4800
+#         dcto=int(input("posee un codigo de descuento? /n 1.- SI /n 2.- NO "))
+#         if op==1:
+#             codigo=input(("ingrese su codigo "))
+#             if codigo=="soyotaku":
+#                    print(f"tiene un 10% de descuento ")
+#             else:
+#                    print("CODIGO NO VALIDO ")      
+
+
+
+###################################29/05##########################################
+
+# atletas de salto alto
+# ingrese la cantidad de atletas que participaran
+# cada atleta debe hacer un salto alto en el
+# rango de 1.55mt y3.78 mt
+#los atletas bajo 1.55: no califican
+#entre 1.56 y 2 bronce
+#entre 2.1 y 3 plata
+#entre 3.1 y + adamantium
+#poner la altura maxima lograda
+
+# import random
+# import time
+# record=0
+# atleta=0
+# cantA=0
+# atletas=int(input("cuantos atletas participaran? "))
+# #atleta+=1
+# for s in range (atletas):
+#         salto=random.uniform(1.0, 3.78)
+#         cantA+=salto
+#         salto=cantA
+#         print(f"el atleta n° {s+1} hizo un salto de {round(salto, 2)} metros")
+#         if salto<1.55:
+#                 print("no casifica ")
+#         elif salto>=1.56 and salto<=2:
+#                  time.sleep(2)
+#                  print("el atleta obtuvo bronce ")
+                         
+#         elif salto>=2.1 and salto<=3:
+#                  time.sleep(2)
+#                  print("el atleta obtuvo plata ")
+#         elif salto>=3.1:
+#                  time.sleep(2)
+#                  print("el atleta obtuvo adamantium ")
+# print(f"el salto mas alto fue de {round(cantA,2)}")
+
+#################################################################################################
+
+# Libreria ñoña
+# crear menu de comics
+# 1. comprar
+# 2. generar boleta
+# 3. salir
+# en la opcion de comprar, mostrar los comics con sus precios
+# cuando se compra, mostrar la cantidad de articulos que lleva mas el monto neto y monto con IVA
+# si ingresa el codigo de descuento "IAMBATMAN" obtiene 25% de dcto AL VALOR NETO
 total=0
-codigo="soyotaku"
-cant
-while True:
-        print ('''
-            1.- Pikachu Roll $4500
-            2.- Otaku Roll $5000
-            3.- Pulpo venenoso Roll $5200
-            4.- Anguila Electrica Roll $4800
-            5.- Salir
-            ''')
-        op=int(input("que desea pedir? "))
-        if op==1:
-                print("eligio pikachu roll")
-                total+=4500
-        elif op==2:
-                print("eligio otaku roll")
-                total+=5000
-        elif op==3:
-                print("eligio pulpo ")
-                total+=5200
-        elif op==4:
-                print("eligio anguila electrica roll ")
-                total+=4800
-        dcto=int(input("posee un codigo de descuento? /n 1.- SI /n 2.- NO "))
-        if op==1:
-            codigo=input(("ingrese su codigo "))
-            if codigo=="soyotaku":
-                   print(f"tiene un 10% de descuento ")
-            else:
-                   print("CODIGO NO VALIDO ")      
+print("bienvenido a la libreria \n que desea hacer ")
+op=int(input('''
+        1.- comprar
+        2.- generar boleta
+        3.- salir
+        '''))
+match op:
+        case 1:
+                print("eligió la opcion comprar \n estas son sus opciones ")
+                comic=int(input('''
+                        1.- deadpool $10500
+                        2.- x-men $12000
+                        3.- spider man $15000 
+                        4.- iron man 13500
+                        5.- salir
+                        '''))
+                match comic:
+                        case 1:
+                                print("eligió deadpool ")
+                                total+=10500
+                        case 2:
+                                print("eligió x-man ")
+                                total+=12000
+                        case 3:
+                                print("espider man ")
+                                total+=15000
+                        case 4:
+                                print("eligio iron man ")
+                                total+=13500
+                        case 5:
+                                print("volviendo al menu principal ")
+                        
+        
 
 
