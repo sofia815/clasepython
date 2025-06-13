@@ -72,17 +72,88 @@
 # seleccione una opccion
 # 1.- agregar productos (nombre del producto y precio)
 # 2.- comprar(submenu mostrando productos y precios)
-# 3.- crear boleta
+# 3.- crear boleta(mostrar cantidad de productos y sus precios, valor neto y valor+iva, )
 # 4.- salir
 
-productos=["1kg uva", "galleta oreo", "pan", "jabon"]
-precios=[2800, 1500, 1000, 3000]
-carrito=[]
-while True:
-    print('''
-        1.- agregar productos (nombre del producto y precio)
-        2.- comprar
-        3.- crear boleta
-        4.- salir
-          ''')
+# productos=["uva", "galleta oreo", "jabon"]
+# precios=[2800, 1500, 3000]
+# carrito=[]
+# while True:
+#     while True:
+#         try:
+#             print('''
+#             1.- agregar productos (nombre del producto y precio)
+#             2.- comprar
+#             3.- crear boleta
+#             4.- salir
+#               ''')
+#             op=int(input("seleccione una opción "))
+#             break
+
+
+#         except Exception:
+#             print("SOLO NUMEROS ENTEROS ")
+#     match op:
+#         case 1:
+#             prod=input("ingrese un producto: ")
+#             productos.append(prod)
+#             pre=int(input("ingrese el precio:  "))
+#             precios.append(pre)
+            
+#         case 2:
+#             while True:
+#                 try:
+#                     for i in range (len(productos)):
+#                         print(i+1, productos[i], "$", precios[i] )
+#                     producto=int(input("seleccione una opción "))
+#                     break
+#                 except Exception:
+#                     print("SOLO NUMEROS ENTEROS ")
+#             carrito.append(producto-1)
+#             print(carrito)
+#         case 3:
+#             print("SU BOLETA ES: ")
+#             for i in carrito:
+#                 print(f"{productos[i]} $ {precios[i]}")
+#                 total=total+precios[i]
+#                 print("la cantidad de articulos que lleva es: ", len(carrito))
+#                 print(f"el total de su compra es: {total} ")
+#                 print(f"el total de su compra mas IVA es de: {total*1.19}")
+                
+
+        
+#         case 4:
+#             print("saliendo ")  
+#             break     
+#         case _:
+#             print("opcion invalida ")
+
+
+#################DICCIONARIOOOOOOOOOOOOOOOOOOOOOOOOOOOOS##########################
+#ES UN COJUNTO DE PARES DE DATOS
+diccionario={
+    "nombre": "Pedro",
+    "numero": 12345,
+    "casado": False
+}
+#print(diccionario["nombre"])  COMO LLAMAR AL VALOR 
+print(diccionario)
+diccionario["ciudad"]="chiloe"
+print(diccionario)
+for key,value in diccionario.items(): 
+    #SE PUEDE PONER CUALQUIER VARIABLE AL FOR
+    print(key, value)
+    productos={
+        "manzana": 1200,
+        "melon": 2000,
+        "piña": 3000
+    }
+    productos["durazno"]=2500
+    print(productos)
+    nom=input("ingrese el nombre del producto: ")
+    valor=int(input("ingrese valor producto: "))
+    productos[nom]=valor
+
+    # tareaaaa: actualizar carrito de compra con un diccionario
+                
     
