@@ -131,29 +131,80 @@
 
 #################DICCIONARIOOOOOOOOOOOOOOOOOOOOOOOOOOOOS##########################
 #ES UN COJUNTO DE PARES DE DATOS
-diccionario={
-    "nombre": "Pedro",
-    "numero": 12345,
-    "casado": False
-}
-#print(diccionario["nombre"])  COMO LLAMAR AL VALOR 
-print(diccionario)
-diccionario["ciudad"]="chiloe"
-print(diccionario)
-for key,value in diccionario.items(): 
-    #SE PUEDE PONER CUALQUIER VARIABLE AL FOR
-    print(key, value)
-    productos={
-        "manzana": 1200,
-        "melon": 2000,
-        "piña": 3000
-    }
-    productos["durazno"]=2500
-    print(productos)
-    nom=input("ingrese el nombre del producto: ")
-    valor=int(input("ingrese valor producto: "))
-    productos[nom]=valor
+# diccionario={
+#     "nombre": "Pedro",
+#     "numero": 12345,
+#     "casado": False
+# }
+# #print(diccionario["nombre"])  COMO LLAMAR AL VALOR 
+# print(diccionario)
+# diccionario["ciudad"]="chiloe"
+# print(diccionario)
+# for key,value in diccionario.items(): 
+#     #SE PUEDE PONER CUALQUIER VARIABLE AL FOR
+#     print(key, value)
+#     productos={
+#         "manzana": 1200,
+#         "melon": 2000,
+#         "piña": 3000
+#     }
+#     productos["durazno"]=2500
+#     print(productos)
+#     nom=input("ingrese el nombre del producto: ")
+#     valor=int(input("ingrese valor producto: "))
+#     productos[nom]=valor
 
     # tareaaaa: actualizar carrito de compra con un diccionario
+
+    ######19/06#########
+
+
+frutas={
+    "manzana": 1200,
+    "melon": 2000,
+    "piña": 3000
+}
+# frutas["durazno"]=2500
+# print(frutas)
+# nom=input("ingrese el nombre de producto ")
+# valor=int(input("ingrese el valor producto: "))
+# frutas[nom]=valor
+# print(frutas)
+while True:
+    try:
+        print('''
+            1.- Ingresar fruta
+            2.- Mostrar fruta
+            3.- Actualizar precio
+            4.- Eliminar producto
+            5.-salir
+              ''')
+        op=int(input("seleccione una opción"))
+        match op:
+            case 1:
+                fruta=input("ingrese el nombre de la fruta ")
+            case 2:
+                for key, dato in frutas.items(): #key, value son pares de datos
+                    print(key, "$", dato )
+            case 3:
+                for key, dato in frutas.items():
+                    print(key, "$", dato )
+                actualizar=int(input("que precio de fruta va a actualizar? "))
+                precio=int(input("ingrese el nuevo precio "))
+                frutas[actualizar]=precio
+                print("precio actualizado ")
+            case 4:
+                for key, dato in frutas.items():
+                    print(key, "$", dato )
+                eliminar=int(input("que fruta desea eliminar? "))
+                del frutas[eliminar]
+            case 5:
+                print("saliendo")
+                break
+            case _:
+                print("opcion no valida ")
+    except Exception as e:
+        print("el error es ", e)           
+                
                 
     
